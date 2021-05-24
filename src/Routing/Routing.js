@@ -11,6 +11,7 @@ import Header from "../Components/Header";
 import { About } from "../Pages/About ";
 import { Home } from "../Pages/Home";
 import My_work from "../Pages/My_work";
+import Services from "../Pages/Services";
 
  const AppRouting = () => {
     return (
@@ -25,6 +26,9 @@ import My_work from "../Pages/My_work";
             </Route>
             <Route exact path="/My_work">
                 <My_work />
+            </Route>
+            <Route exact path="/Services">
+                <Services />
             </Route>
             </Switch>          
         </Router>

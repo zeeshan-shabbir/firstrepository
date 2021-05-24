@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 :root{
     --primary-font:'Nunito', sans-serif;
+    --secondary-font:'Oxygen', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
     --primary_color:#007bff;
     --secondary_color:green;
 }
 body{
+    font-family: var(--secondary-font);
     overflow-x: hidden;
-    height: 10000px;
 }
 .nav_wrapper{
-    height: 60px;
+    height: 80px;
     width: 100%;
     background-color: white;
 }
 .container{
-    background-color: rgb(187, 187, 187);
+    background-color: #ffffff;
     /* position: fixed;
     right: 0;
     left: 0; */
@@ -22,7 +26,7 @@ body{
 .nav-Link{
     /* color: white !important; */
     font-size: 22px;
-    padding: 10px;
+    padding: 26px 10px;
     margin: 0px 5px;  
 }
 .slide {
@@ -41,7 +45,59 @@ body{
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.slide-1 {
+    background-image: url("../images/slider/slider-01.jpg");
+}
+.slide-2 {
+    background-image: url("../images/slider/slider-02.jpg");
+}
+ .slide-content {
+     position: relative;
+     color: #fff;
+     width: 80%;
+     margin: 0 auto;
+     margin-top: 5%;
+}
+.slick-prev {
+    left: 0px !important;
+    z-index: 100 !important;
+  
+}
+.slick-next {
+    right: 2% !important;
+    z-index: 100 !important;
+  
+}
+.slick-prev:before,.slick-next:before {
+    font-size: 50px !important;
+}
+.myintro{
+    padding: 20px;
+} 
+/* .my-pic-box{
+    width: 40%;
+
+} */
+ .myintro h1 {
+     font-size: 70px;
+} 
+ .myintro p{
+     font-size: 55px;
+     text-align: center;
+} 
+.introbtn{
+    font-size: 40px;
+}
+.my-img{
+    height: 450px;
+    width: 400px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+}
+.row1{
+    margin: 20px 40px;
 }
 .about_h1 h1{
     border: 2px solid black;
@@ -84,4 +140,57 @@ body{
 }
 .jquery_power{
     width: 70%;
+}
+/* Services start here */
+.service-cont{
+    margin-top: 100px;
+}
+.subserv-h1{
+    margin: 15px 0px;
+}
+.serv-para{
+padding: 0px 5px;
+word-spacing: 2.2px;
+line-height: 25px;
+}
+/* footer start here  */
+.footer a{
+    color: white !important;
+    display: inline-block;
+}
+.footer p{
+    color: white;
+}
+.footerRow{
+    width: 90%;
+    margin: auto;
+}
+.footer-cols{
+    width: 40%;
+    margin: 0px 15px;
+    padding: 20px 0px;
+}
+.social-link{
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 40px !important;
+    padding: 10px;
+    margin: 0px 5px;
+    
+}
+.message p{
+    padding: 10px 0px;
+    word-spacing: 0.1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+.message h1{
+    color: white !important;
+}
+.copyright{
+    background-color: #fff;
+    padding: 10px 0px;
+}
+.copyright p,.copyright a{
+    color: black !important;
 }

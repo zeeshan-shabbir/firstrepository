@@ -12,6 +12,13 @@
     margin: 0 auto;
     height: auto;
 }
+.bg-white{
+    background-color: #ffffff;
+}
+.shadow{
+    box-shadow: 0px 2px 6px 0px rgb(50 50 50 / 80%);
+
+}
 a{
     text-decoration: none;
     color: black;
@@ -75,7 +82,7 @@ span{
     text-align: justify;
 }
 .bg-dark{
-    background-color: #2a2c30;
+    background-color: #000000;
 }
 .btn{
     cursor: pointer;
@@ -113,5 +120,9 @@ input{
     right: 0;
     z-index: 1;
 }
-
-
+.my-top{
+    margin-top: 4rem;
+}
+.border{
+    border: 2px solid black;
+}

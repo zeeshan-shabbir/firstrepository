@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <div>
             <div className="nav_wrapper">
-                <div className="container-100 fixed bg-dark">
+                <div className="container-100 bg-white shadow fixed">
                     <div className='container  flex justify-between align-center '>
                         <div className='Logo'>
                             <NavLink exact to="/" className='nav-Link'>  <p>My Logo</p></NavLink>
@@ -21,7 +21,7 @@ export default function Header() {
                                     <NavLink to="/About" className='nav-Link'>About</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink exact to="/" className='nav-Link'>Services</NavLink>
+                                    <NavLink exact to="/Services" className='nav-Link'>Services</NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavLink exact to="/" className='nav-Link'>Testimonials</NavLink>
