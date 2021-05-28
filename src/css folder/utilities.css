@@ -10,7 +10,7 @@
 .container{
     max-width: 1170px;
     margin: 0 auto;
-    height: auto;
+    height: 100%;
 }
 .bg-white{
     background-color: #ffffff;

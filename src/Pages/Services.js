@@ -8,9 +8,9 @@ export default function Services() {
     return (
         <div>
             <div className="container-100 service-cont capitalize">
-                <div className="serv-h1 center"><h1>SERVICES</h1></div>
+                <div className=" center"><h1 className="serv-h1">SERVICES</h1></div>
                 <div className="servs-wrapper">
-                    <div className="row flex align-center space-between">
+                    <div className="sevs-row flex align-center justify-between">
                         <div className="services serv-1">
                             <div className="serv-logo center">
                                 <FaHtml5  style={style} />
@@ -19,7 +19,7 @@ export default function Services() {
                                 <h2>website design</h2>
                             </div>
                             <div className="serv-para">
-                               i will design Or customize your website using modern technologies.website will be fully responsive and mobile freindly.clean html code ,Beautiful  UI(user interface),css animations,javaScript events and much more as per your desire.
+                               i will design Or customize your website using modern technologies.website will be fully responsive and mobile freindly.clean html code ,Beautiful  UI(user interface),css animations,javaScript events and much more as per your desire. Lorem ipsum dolor sit amet.
                             </div>
                         </div>
                         <div className="services serv-2">
