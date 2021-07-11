@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "../services/service.css"
 import { FaHtml5 } from 'react-icons/fa'
 
 export default function Services() {

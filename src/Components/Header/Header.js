@@ -1,10 +1,11 @@
 import React, {useState,useEffect}from 'react'
 import { NavLink } from "react-router-dom";
+import "./Header.css"
 
 export default function Header() {
     const isActive = {
         fontWeight: "bold",
-        backgroundColor: "rgba(255, 255, 255, 0.1)",
+        color:"orange",
     };
     const [header, setHeader] = useState("header")
 

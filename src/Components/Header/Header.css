@@ -1,0 +1,46 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    color: white !important;
+    transition: all 1s ease;
+    z-index: 999;
+    box-shadow: 0px 2px 6px 0px rgb(50 50 50 / 80%);
+    
+}
+.header2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    height: 70px;
+    overflow-y: hidden !important;
+    background-color: white;
+    color: black !important;
+    transition: all 1s ease;
+    box-shadow: 0px 2px 6px 0px rgb(50 50 50 / 80%);
+
+}
+.nav-Link{
+    font-family: var(--primary-font);
+    color: inherit ;
+    font-size: 26px;
+    padding: 0px 5px;
+    
+}
+.nav-Link:hover{
+    transition: all .3s ease-in ;
+    color: orange;
+}
+.nav-item{
+    margin: 0px 10px;
+}
+.Logo-text{
+    /* color: var(--primary_color) !important; */
+}

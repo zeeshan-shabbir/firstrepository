@@ -1,0 +1,52 @@
+.about{
+    margin-top: -10px;
+    padding: 40px 0px;
+    background-color: white ;
+}
+.row1{
+    margin: 20px 40px;
+}
+.about_cols{
+    width: 50%;
+    margin: 0px 10px;
+}
+.about-para{
+    margin: 15px 10px;
+    text-align: justify;
+    word-spacing: 0.075rem;
+    font-family: var(--primary-font);
+    color: #555;
+    /* color: white; */
+    font-size: 18px;
+}
+.skills_power{
+    background-color: var(--primary_color);
+    height: 100%;
+}
+.skill-h1 h1{
+    font-weight: lighter;
+    font-family: var(--primary-font);
+    padding: 5px 0px;
+    /* color: white; */
+}
+.progress{
+    border: 2px solid var(--secondary_color);
+    height: 30px;
+    background-color: #e9ecef;
+    /* border: 2px solid #000000; */
+}
+.html_power{
+    width: 85%;
+}
+.css_power{
+    width: 90%;
+}
+.bootstrap_power{
+    width: 85%;
+}
+.js_power{
+    width: 80%;
+}
+.jquery_power{
+    width: 70%;
+}

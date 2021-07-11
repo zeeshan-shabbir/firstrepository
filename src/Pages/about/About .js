@@ -1,13 +1,14 @@
 import React from 'react'
 import Zoom from 'react-reveal/Zoom';
 import Fade   from 'react-reveal/Fade';
+import "../about/about.css"
 
 
 export const About = () => {
     return (
         <>
           
-            <div className='my-top'>
+            <div className=' about'>
                 <div className=" center">
                     <h1 className="about_h1">About Me</h1>
                 </div>
@@ -30,7 +31,7 @@ export const About = () => {
                         </Fade>
                         <Fade  right duration={2500}>
                         <div className="about_cols col-2">
-                            <div className="skills_indicator">
+                            <div className="skills_indicator capitalize">
                                 <div className="skill_1">
                                     <div className="skill-h1"><h1>Html</h1> </div>
                                     <div className=" progress">

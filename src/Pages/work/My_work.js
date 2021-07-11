@@ -1,4 +1,6 @@
 import React from 'react'
+// import "../work/work.css"
+import '../work/work.css'
 
 
 export default function My_work() {

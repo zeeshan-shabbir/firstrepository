@@ -7,12 +7,12 @@ import {
 import '../css folder/App.css'
 import '../css folder/utilities.css'
 
-import Header from "../Components/Header";
-import { About } from "../Pages/About ";
-import { Home } from "../Pages/Home";
-import My_work from "../Pages/My_work";
-import Services from "../Pages/Services";
-import Contact from "../Pages/Contact";
+import Header from "../Components/Header/Header";
+import { About } from "../Pages/about/About ";
+import { Home } from "../Pages/home/Home";
+import My_work from "../Pages/work/My_work";
+import Services from "../Pages/services/Services";
+import Contact from "../Pages/contact/Contact";
 import FullWidthBg from '../Components/fullWidthBg'
 
  const AppRouting = () => {
