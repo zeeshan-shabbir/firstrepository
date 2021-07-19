@@ -18,8 +18,8 @@ export default function AppSlider() {
     const settings = {
         dots: false,
         // arrows: false,
-        infinite: true,
-        pauseOnHover:true,
+        // infinite: true,
+        pauseOnHover: true,
         slidesToShow: 1,
         // autoplay: true,
         autoplaySpeed: 7000,
@@ -35,27 +35,28 @@ export default function AppSlider() {
 
         <div>
             <Slider {...settings}>
-                <div className='slide slide-1'>
-                    <div className="sslide-content capitalize flex justify-between align-center ">
-                        <div className="myintro slide-content">
-                            <h1 className="slide1-h1"> zeeshan shabbir</h1>
-                            <p className="slide1-p">
-                                front  end <br /> web developer
-                              </p>
-                            <div className="center slide1-btn">
-                                <button className='btn introbtn center'>Contact me</button>
+                <div>
+                    <div className='slide slide-1'>
+                        <div className=" capitalize">
+                            <div className="myintro slide-content">
+                                <h1 className="slide1-h1"> zeeshan shabbir</h1>
+                                <p className="slide1-p">
+                                    front  end <br /> web developer
+                                </p>
+                                <div className="center slide1-btn">
+                                    <button className='btn introbtn center'>Contact me</button>
+                                </div>
                             </div>
-                        </div>
-                        <div className="my-pic-box">
-                            <div>
-                                <img className="my-img" src={ZeeshanImg} alt="Zeeshan Web developer" width='100%' height='100%' />
+                            <div className="my-pic-box">
+                                <div>
+                                    <img className="my-img" src={ZeeshanImg} alt="Zeeshan Web developer" width='100%' height='100%' />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='slide slide-2'>
-                    <h3>2</h3>
-                </div>
+        
+
             </Slider>
         </div>
     )

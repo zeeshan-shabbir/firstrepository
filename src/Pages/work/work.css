@@ -1,24 +1,59 @@
 .rows{
     position: relative;
 }
+.work-h1{
+    /* margin-top: 20px; */
+}
 .work-1{
-    background: url(../../images/works/work-01.webp) no-repeat center center/cover;
+    /* background: url(../../images/works/work-01.webp) no-repeat center center/cover; */
 }
 .works{
-    height: 350px;
-    width: 380px;
-    margin: 15px;
-    color:white;
     position: relative;
-    padding-left: 20px;
-    transition: .5s all ;
+    height: 350px;
+    color:white;
+    border-radius: 10px;
+    overflow: hidden !important;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
 }
-@keyframes animate{
+.work-img{
+    height: 352px;
+    width: 350px;
+}
+.works:hover{
+    cursor: url(../../images/custom.cur),auto;
+    transition: all .3s ease;
+    transform: scale(1.02);
+    
+}
+.works:hover>::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 98%;
+    background-color: rgba(0, 0, 0, 0.097);
+
+    
+}
+.works:hover > .work-link{
+  transition: 1s all ease;
+   opacity: 1;
+   
+}
+.work-link{
+    opacity: 0;
+position: absolute;
+top: 0;
+right: 0;
+background-color: #fff;
+}
+/* @keyframes animate{
     0%   {height: 0%;}
     25%   {height: 15%;}
     50%   {height: 25%;}
     100%   {height: 50%;}
-}
+} */
 /* @keyframes animateup{
     0%   {height: 0%;}
     25%   {height: 15%;}
@@ -26,12 +61,12 @@
     100%   {height: 50%;}
 } */
 
-.hover-effect-up{
+/* .hover-effect-up{
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    /* height: 50%; */
+    height: 50%;
     background-color: rgba(0, 255, 42, 0.57);
     opacity: 0;
 }
@@ -44,16 +79,16 @@
     background-color:rgba(182, 182, 182, 0.378);
     opacity: 0;
     
-}
+} */
 /* .works:hover >.hover-effect-up {
 
     animation: animateup 1s linear 0s 1 alternate;
     opacity: 1;
 } */
-.works:hover > .hover-effect-down,.works:hover >.hover-effect-up{
+/* .works:hover > .hover-effect-down,.works:hover >.hover-effect-up{
     opacity: 1;
     animation: animate .3s linear 0s 1 alternate;
-}
+} */
 /* .works:hover::before{
     content: "";
     position: absolute;
@@ -64,6 +99,11 @@
     background-color: rgba(0, 255, 42, 0.4);
 
 } */
+.works:hover>img{
+    transform: scale(30px,30px);
+    background-color: red;
+    cursor: pointer;
+}
 .works-contents{
     position: absolute;
     bottom: 10px;

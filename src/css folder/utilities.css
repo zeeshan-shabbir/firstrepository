@@ -84,22 +84,7 @@ span{
 .bg-dark{
     background-color: #000000;
 }
-.btn{
-    cursor: pointer;
-    padding: 5px 10px;
-    color: black;
-    background-color: rgb(138 138 255);
-    border: 2px solid black;
-    transition: all .3s ease;
-    display: inline-block;
-    margin: 10px 0px;
-    text-align: center;
-    text-transform: capitalize;
-}
-.btn:hover{
-    opacity: 0.8;
 
-}
 .hide{
     display: none;
 }

@@ -4,7 +4,7 @@ import Fade   from 'react-reveal/Fade';
 import "../about/about.css"
 
 
-export const About = () => {
+export  const About = () => {
     return (
         <>
           

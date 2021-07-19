@@ -1,15 +1,23 @@
 /* Services start here */
 
 .services{
-    padding: 10px 20px;
+    padding: 10px;
     width: 30%;
+    margin-top: 30px;
     box-shadow: rgb(50 50 93) 0px 2px 13px 5px, rgb(255 255 255) -1px -5px 8px 4px;
-    background-color: rgba(0, 0, 0, 0.282); 
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.357); 
 
 
 }
-.subserv-h1{
+.subserv-h{
    margin-top: 15px;
+   
+}
+.subserv-h h2{
+  display: inline-block;
+   border-bottom: 4px solid orange;
 }
 .serv-para{
     padding: 10px 15px;
@@ -19,11 +27,12 @@
     font-family: var(--primary-font);
     color: white;
     /* border: 2px solid rgba(255, 255, 255, 0.515); */
+    border-bottom: 2px solid orange;
     border-radius:  10px;
     font-size: 18px;
 }
 .sevs-row{
-    margin-top: 40px;
+    /* margin-top: 40px; */
     padding: 0px 60px;
     /* color: white !important; */
 }
