@@ -1,3 +1,4 @@
+@import "../../css folder/variable.css";;
 .rows{
     position: relative;
 }
@@ -9,100 +10,58 @@
 }
 .works{
     position: relative;
-    height: 350px;
+    height: 100%;
+    width: 30%;
     color:white;
     border-radius: 10px;
     overflow: hidden !important;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    
 
 }
 .work-img{
-    height: 352px;
-    width: 350px;
+    height: 100%;
+    width: 100%;
 }
 .works:hover{
-    cursor: url(../../images/custom.cur),auto;
+    /* cursor: url(../../images/custom.cur),auto; */
+    /* cursor: pointer; */
     transition: all .3s ease;
-    transform: scale(1.02);
+    transform: scale(1.04);
     
 }
-.works:hover>::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 98%;
-    background-color: rgba(0, 0, 0, 0.097);
-
-    
-}
-.works:hover > .work-link{
-  transition: 1s all ease;
-   opacity: 1;
+.works:hover > .work-intro{
+    animation: animateup .3s linear 0s 1 alternate;
+    opacity: 1;
    
 }
-.work-link{
-    opacity: 0;
-position: absolute;
-top: 0;
-right: 0;
-background-color: #fff;
-}
+
 /* @keyframes animate{
     0%   {height: 0%;}
     25%   {height: 15%;}
     50%   {height: 25%;}
     100%   {height: 50%;}
 } */
-/* @keyframes animateup{
-    0%   {height: 0%;}
-    25%   {height: 15%;}
-    50%   {height: 25%;}
-    100%   {height: 50%;}
-} */
-
-/* .hover-effect-up{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background-color: rgba(0, 255, 42, 0.57);
-    opacity: 0;
+@keyframes animateup{
+    /* 0%   { transform: translateY(10%);} */
+    /* 50%   {opacity:0.7} */
+    /* 25%   { transform: translateY(-50%);} */
+    /* 50%   { transform: translateY(-75%);} */
+    /* 100%   { transform: translateY(0%);} */
+    0%   {opacity:0}
+    25%   {opacity:0.3}
+    50%   {opacity:0.5}
+    75%  {opacity:0.7}
+    100%  {opacity:1}
 }
-.hover-effect-down{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    background-color:rgba(182, 182, 182, 0.378);
+
+.work-intro{
     opacity: 0;
-    
-} */
-/* .works:hover >.hover-effect-up {
-
-    animation: animateup 1s linear 0s 1 alternate;
-    opacity: 1;
-} */
-/* .works:hover > .hover-effect-down,.works:hover >.hover-effect-up{
-    opacity: 1;
-    animation: animate .3s linear 0s 1 alternate;
-} */
-/* .works:hover::before{
-    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 255, 42, 0.4);
-
-} */
-.works:hover>img{
-    transform: scale(30px,30px);
-    background-color: red;
-    cursor: pointer;
+    top: 0%;
+    padding: 25% 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.302);
 }
 .works-contents{
     position: absolute;
@@ -112,4 +71,29 @@ background-color: #fff;
 .works-contents p{
     font-size: 20px;
     font-weight: bolder;   
+}
+.proIntro{
+    font-size: 20px;
+    width: 70%;
+    margin:10px  auto;
+    text-align: justify;
+    font-family:var(--primary-font) ;
+}
+.projLink{
+    border: 3px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    color: white !important;
+    cursor: pointer;
+}
+.projLink:hover{
+    background-color: rgba(255, 166, 0, 0.59);
+    transition: all .3s ease-out;
+}
+.hrline{
+    border-bottom: 2px solid rgba(121, 121, 121, 0.508);
+    position: relative;
+    top: 40px;
 }

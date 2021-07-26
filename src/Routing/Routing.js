@@ -14,32 +14,34 @@ import My_work from "../Pages/work/My_work";
 import Services from "../Pages/services/Services";
 import Contact from "../Pages/contact/Contact";
 import FullWidthBg from '../Components/fullWidthBg'
+import Footer from "../Components/Footer";
 
- const AppRouting = () => {
+const AppRouting = () => {
     return (
         <Router>
             <Header />
             <Switch>
-            <Route exact path="/">
-                <Home />
-            </Route>
-            <Route exact path="/about">
-            <FullWidthBg />
-                <About />
-            </Route>
-            <Route exact path="/My_work">
-            <FullWidthBg />
-                <My_work />
-            </Route>
-            <Route exact path="/Services">
-            <FullWidthBg />
-                <Services />
-            </Route>
-            <Route exact path="/Contact">
-            <FullWidthBg />
-                <Contact />
-            </Route>
-            </Switch>          
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route exact path="/about">
+                    <FullWidthBg />
+                    <About />
+                </Route>
+                <Route exact path="/My_work">
+                    <FullWidthBg />
+                    <My_work />
+                </Route>
+                <Route exact path="/Services">
+                    <FullWidthBg />
+                    <Services />
+                </Route>
+                <Route exact path="/Contact">
+                    <FullWidthBg />
+                    <Contact />
+                </Route>
+            </Switch>
+            <Footer />
         </Router>
     )
 }

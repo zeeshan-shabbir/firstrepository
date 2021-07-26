@@ -1,16 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-:root{
-    --primary-font:'Nunito', sans-serif;
-    --secondary-font:'Oxygen', sans-serif;
-    --secondary-font: 'Roboto', sans-serif;
-    --primary_color:#1fff5a;
-    --secondary_color:orange;
-}
+
+@import url("./variable.css");
+
 body{
     font-family: var(--secondary-font);
     overflow-x: hidden;
+    cursor: default;
 }
 .about_h1,.serv-h1,.work-h1,.contact-h1 {
     border: 2px solid var(--primary_color);
@@ -22,7 +16,7 @@ body{
 .work-h1,.contact-h1 {
     color:  black !important;
 }
-.service-cont,.work-cont,.contact-cont{
+.work-cont,.contact-cont{
     margin-top: 80px;
     color: white !important;
 }
@@ -48,88 +42,7 @@ body{
 .full-Bg{
     background-image: url("../images/full-bg/full-bg.jpg");
 }
-/* .bg-fixed{
-    background-image: url("../images/bg fixed/bg-fixed1.jpg");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-.bg-fixed::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2000px;
-    z-index: -1;
-    background-color: rgba(0, 0, 0, 0.3);
-    /* background: url("../images/bg fixed/bg-fixed2.jpg") no-repeat fixed center/cover; */
-    /* background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }*/ 
-.bg-fixed::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1830px;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-.bg-fixed{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1830px;
-   background: url("../images/bg fixed/bg-fixed2.jpg") no-repeat fixed center/cover;
-    z-index: -1;
-}
-/* .home{
-    background-image: url("../images/bg fixed/bg-fixed1.jpg");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.home::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2000px;
-    background-color: rgba(0, 0, 0, 0.3);
-} */
-/* slider for home page start here  */
 
-
-/* my work start here */
-
-/* contact start here  */
-.contact-cont{
-}
-.feilds,.msg-feilds{
-    margin-top: 25px;
-}
-.form-feild{
-    padding: 7px 0px 7px 10px;
-    width: 100%;
-    text-transform: capitalize;
-    font-family: var(--secondary-font);
-   font-weight: bold;
-   color: rgb(73, 80, 87);
-   background-color: rgb(255, 255, 255);
-   border: 1px solid rgb(206, 212, 218);
-}
-.feilds div{
-    width: 330px !important;
-}
 /* footer start here  */
 .footer a{
     color: white !important;
@@ -189,9 +102,8 @@ body{
 }
 .btn:hover{
     transition: all .3s ease;
-    background-color: var(--secondary_color);
     background-color:transparent;
     box-shadow: none;
-    opacity: 0.8;
+    opacity: 1;
 
 }

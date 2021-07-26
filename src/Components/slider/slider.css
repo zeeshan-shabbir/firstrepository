@@ -96,7 +96,7 @@
     0% {opacity:0;color: red;}
     100% {opacity:1;}
   }
-  .slick-active .slide1-h1{
+ .swiper-slide-active .slide1-h1{
     /* animation: fadeIn 5s linear 2s ; */
     /* animation-name: fadeIn; */
     animation-name: fadeInDown;
@@ -105,12 +105,12 @@
     /* width: 100%;
     padding: 10px 20px 30px 0; */
   }
-  .slick-active .slide1-p{
+ .swiper-slide-active .slide1-p{
     animation-name: fadeInUp;
     animation-duration: 3s;
     opacity: 1;
   }
-  .slick-active .slide1-btn{
+ .swiper-slide-active .slide1-btn{
     animation-name: fadeInRigth;
     animation-duration: 3s;
     opacity: 1;

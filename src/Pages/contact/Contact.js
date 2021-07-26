@@ -1,4 +1,5 @@
 import React from 'react'
+import "./contact.css"
 
 export default function Contact() {
     const row_style={
@@ -40,7 +41,7 @@ export default function Contact() {
                     </div>
                     <div className="btn-box">
                         <div className="btn-inp">
-                            <input type="button" value="Send message" className="btn" />
+                            <input type="button" value="Send message" className="btn contbtn" />
                         </div>
                     </div>
                 </form>

@@ -13,7 +13,7 @@ export default function SerCard(props){
  
     return (
         <>
-        <Fade bottom duration={3000}>
+        <Fade bottom duration={2000}>
             <div className="services ">
                 <div className="serv-logo center">
                     <FaHtml5 style={style} />

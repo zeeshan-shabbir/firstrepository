@@ -1,6 +1,7 @@
+@import "../../css folder/variable.css";
 .about{
     margin-top: -10px;
-    padding: 40px 0px;
+    padding: 40px 0px 60px 0px;
     background-color: white ;
 }
 .row1{
@@ -30,7 +31,7 @@
     /* color: white; */
 }
 .progress{
-    height: 30px;
+    height: 20px;
     background-color: #e9ecef;
     /* border: 2px solid #000000; */
 }
@@ -48,4 +49,13 @@
 }
 .jquery_power{
     width: 70%;
+}
+.aboutBtn{
+    position: relative;
+    left: 40%;
+    top: 10px;
+}
+.cvbtn{
+    font-size: 25px !important;
+
 }

@@ -4,8 +4,8 @@ import  {About}  from '../about/About '
 import Services from '../services/Services'
 import My_work from '../work/My_work'
 import Contact from '../contact/Contact'
-import Img from '../../images/bg fixed/bg-fixed.jpg'
-import BgFixed from '../../Components/BgFixed'
+import Picker from '../../Components/Theme/Picker'
+
 
 
 export const Home = () => {
@@ -13,11 +13,11 @@ export const Home = () => {
         <div className="home">
          
             <AppSlider />
-            <About />
-            <BgFixed />
+            <About />         
             <Services />
             <My_work />
             <Contact />
+            <Picker />
         </div>
     )
 }

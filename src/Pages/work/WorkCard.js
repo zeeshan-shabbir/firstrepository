@@ -1,0 +1,31 @@
+import React from 'react'
+
+export default function WorkCard(props) {
+    const { data } = props;
+    console.log(data.image);
+    return (
+     
+             <div className="works">
+                        <div className="">
+                            {/* <i> */}
+                                <img src={data.image} alt="" className="work-img"/>
+                            {/* </i> */}
+                        </div>
+                        <div className="work-intro center">
+                           
+                            <h2 className="proName">
+                               {  data.name }
+                            </h2>
+                            <p className="proIntro">
+                              {data.description}
+                            </p>
+                            <div>
+                                <a href= {data.link} className="projLink" target="_blank" >
+                              See Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+    )
+}

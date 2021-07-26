@@ -5,7 +5,7 @@ import "./Header.css"
 export default function Header() {
     const isActive = {
         fontWeight: "bold",
-        color:"orange",
+        color: "var(--secondary_color)",
     };
     const [header, setHeader] = useState("header")
 

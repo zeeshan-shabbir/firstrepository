@@ -66,6 +66,11 @@ export  const About = () => {
                         </div>
                         </Fade  >
                     </div>
+                    <div className="aboutBtn">
+                            <button className="btn cvbtn">
+                                Download CV
+                            </button>
+                        </div>
                 </div>
             </div>
         </>

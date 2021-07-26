@@ -1,41 +1,42 @@
 import React from 'react'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import ZeeshanImg from '../../images/zeeshan/zee1.jpg'
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import SwiperCore, { Autoplay , EffectFade } from 'swiper';
+// Import Swiper styles
+// import "swiper/swiper.scss";
+import "swiper/swiper.min.css";
+import "swiper/components/effect-fade/effect-fade.min.css"
 import "./slider.css"
-
-
-
 export default function AppSlider() {
-    const beforechange = () => {
-        var slickActive = document.getElementsByClassName("slick-active")
-        var slideContent = document.getElementsByClassName("slide-content")
-        // console.log(h1);
-        slickActive.className = "animation"
-        slideContent.className = "animation"
-    }
-    const settings = {
-        dots: false,
-        // arrows: false,
-        // infinite: true,
-        pauseOnHover: true,
-        slidesToShow: 1,
-        // autoplay: true,
-        autoplaySpeed: 7000,
-        speed: 2000,
-        fade: true,
-        // cssEase: 'linear',
-        beforechange,
-        slidesToScroll: 1
+    SwiperCore.use([EffectFade,Autoplay])
+    
+    // slider configuration
+    const SliderConfigs = {
+        // containerClass: 'swiper-container hero-slider',
+        // parallax: true,
+        // centeredSlides: true,
+        // grabCursor: true,
+        speed: 1000,
+        spaceBetween: 0,
+        // effect: 'slide',
+        effect: 'fade',
+        loop:true,
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: true,
+            pauseOnMouseEnter:true,
+        },
     };
-
 
     return (
 
         <div>
-            <Slider {...settings}>
-                <div>
+            <Swiper {...SliderConfigs}>
+            <SwiperSlide>
+            <div>
                     <div className='slide slide-1'>
                         <div className=" capitalize">
                             <div className="myintro slide-content">
@@ -44,7 +45,7 @@ export default function AppSlider() {
                                     front  end <br /> web developer
                                 </p>
                                 <div className="center slide1-btn">
-                                    <button className='btn introbtn center'>Contact me</button>
+                                    <a className='btn introbtn center' href="https://www.facebook.com" target="_blank">Contact me</a>
                                 </div>
                             </div>
                             <div className="my-pic-box">
@@ -55,9 +56,34 @@ export default function AppSlider() {
                         </div>
                     </div>
                 </div>
+                
+            </SwiperSlide>
+            <SwiperSlide>
+            <div>
+                    <div className='slide slide-2'>
+                        <div className=" capitalize">
+                            <div className="myintro slide-content">
+                                <h1 className="slide2-h1"> zeeshan shabbir</h1>
+                                <p className="slide2-p">
+                                    front  end <br /> web developer
+                                </p>
+                                <div className="center slide1-btn">
+                                    <button className='btn introbtn center'>zeeshan me</button>
+                                </div>
+                            </div>
+                            <div className="my-pic-box">
+                                <div>
+                                    <img className="my-img" src={ZeeshanImg} alt="Zeeshan Web developer" width='100%' height='100%' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </SwiperSlide>
         
-
-            </Slider>
+               
+            </Swiper>
         </div>
     )
 }
+
