@@ -3,7 +3,7 @@
 .contact-cont{
 }
 .feilds,.msg-feilds{
-    margin-top: 25px;
+    margin-top: 2.5rem;
 }
 .form-feild{
     padding: 7px 0px 7px 10px;
@@ -16,9 +16,15 @@
    border: 1px solid rgb(206, 212, 218);
    transition:  box-shadow .3s ease-in-out;
    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+   font-size: 2rem;
 }
 .feilds div{
-    width: 330px !important;
+    width: 33rem ;
+    padding: 0.5rem 1.2rem;
+}
+.msg-feilds,.btn-inp{
+    padding: 0.5rem 1.2rem;
+
 }
 .form-feild:focus{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;

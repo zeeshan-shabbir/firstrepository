@@ -2,21 +2,21 @@ import React from 'react'
 import "./contact.css"
 
 export default function Contact() {
-    const row_style={
-    width:"700px",
-    margin:"0px auto",
-
-
-    }
+    // const row_style={
+    // width:"70rem",
+    // margin:"0px auto",
+    // }
     const form_style={
-        marginTop : "20px"
+        width:"50%",
+        margin:"auto",
+        marginTop : "2rem",
     }
     return (
         <div className="container-100 contact-cont capitalize">
             <div className="center">
             <h1 className="contact-h1">contacts</h1>
             </div>
-            <div className="cont-row" style={row_style}>
+            <div className="cont-row" >
                 <form action="" className="cont-form" style={form_style}>
                     <div className="feilds flex justify-between ">
                         <div className="fname">
@@ -39,11 +39,11 @@ export default function Contact() {
                             <textarea name="" id="" placeholder="your message for me *" className="form-feild" required></textarea>
                         </div>
                     </div>
-                    <div className="btn-box">
+                 
                         <div className="btn-inp">
                             <input type="button" value="Send message" className="btn contbtn" />
                         </div>
-                    </div>
+                
                 </form>
                 
             </div>

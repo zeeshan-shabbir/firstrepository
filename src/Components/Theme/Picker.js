@@ -1,20 +1,41 @@
-import React , {useState} from 'react'
-import { SketchPicker } from 'react-color';
+import React, { useState } from 'react'
+import { ChromePicker } from 'react-color';
+import "./picker.css"
 export default function Picker() {
     var root = document.querySelector(':root');
-    const [color,setcolor]=useState("orange")
-    const [showpicker,setshowpicker]=useState(false)
-    console.log(color);
-    root.style.setProperty('--secondary_color', color);
+    const [secColor, setSecColor] = useState("orange")
+    const [priColor, setPriColor] = useState("#0008ffcc")
+    const [showpicker, setshowpicker] = useState(false)
+    const [showPri, setShowPri] = useState(false)
+    const [showSec, setShowSec] = useState(false)
+    root.style.setProperty('--secondary_color', secColor);
+    root.style.setProperty('--primary_color', priColor);
     return (
-        <div>
-            <button onClick={()=>setshowpicker(showpicker => !showpicker)}>{showpicker ? "close X" :"pick a color"}</button>
-            {showpicker && ( <SketchPicker 
-                 color={ color}
-                 onChangeComplete={ (color) => { setcolor(color.hex)} }
-             />
-             )}
-            
+        <div className="picker">
+            <button onClick={() => setshowpicker(showpicker => !showpicker)}>{showpicker ? "X" : "Theme"}</button>
+
+            {showpicker && <div>
+                <button onClick={() => setShowPri(showPri => !showPri)}>{showPri ? "X" : "Primary Color"}</button>
+                {showPri && (<ChromePicker
+                    color={secColor}
+                    onChange={(secColor) => { setSecColor(secColor.hex) }}
+                />
+                )}
+
+            </div>}
+          
+            {showpicker && (
+                  <div>
+                  <button onClick={() => setShowSec(showSec => !showSec)}>{showSec ? "X" : "secondary Color"}</button>
+                  {showSec && (
+                      <ChromePicker
+                          color={priColor}
+                          onChange={(priColor) => { setPriColor(priColor.hex) }}
+                      />
+                  )}
+              </div>
+            )}
+
         </div>
     )
 }

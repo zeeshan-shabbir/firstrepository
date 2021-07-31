@@ -13,9 +13,9 @@ export default function WorkCard(props) {
                         </div>
                         <div className="work-intro center">
                            
-                            <h2 className="proName">
+                            <h1 className="proName">
                                {  data.name }
-                            </h2>
+                            </h1>
                             <p className="proIntro">
                               {data.description}
                             </p>

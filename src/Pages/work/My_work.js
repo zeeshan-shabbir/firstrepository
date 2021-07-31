@@ -21,7 +21,7 @@ export default function My_work() {
                         my work
                     </h1>
                 </div>
-                <div className="rows flex align-center justify-between">
+                <div className="workRows flex align-center justify-between ">
                 {WorkData.slice(0,3).map((item) => (
                         
                         <WorkCard key={item.id}  data={item}></WorkCard>

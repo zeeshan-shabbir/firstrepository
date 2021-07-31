@@ -3,7 +3,7 @@
 
 body{
     font-family: var(--secondary-font);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     cursor: default;
 }
 .about_h1,.serv-h1,.work-h1,.contact-h1 {
@@ -11,13 +11,14 @@ body{
     border-width: 2px 0px;
     display: inline-block;
     padding: 5px 0px 7px 0px;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
 }
 .work-h1,.contact-h1 {
     color:  black !important;
 }
 .work-cont,.contact-cont{
-    margin-top: 80px;
+    margin-top: 8rem;
     color: white !important;
 }
 

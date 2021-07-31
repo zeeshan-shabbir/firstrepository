@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import '../css folder/App.css'
 import '../css folder/utilities.css'
+import "../css folder/Responsive.css"
 
 import Header from "../Components/Header/Header";
 import { About } from "../Pages/about/About ";
@@ -41,7 +42,7 @@ const AppRouting = () => {
                     <Contact />
                 </Route>
             </Switch>
-            <Footer />
+            {/* <Footer /> */}
         </Router>
     )
 }

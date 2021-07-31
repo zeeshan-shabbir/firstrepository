@@ -1,0 +1,7 @@
+.picker{
+    position: fixed;
+    top: 30%;
+    left: 0%;
+    display: inline-block;
+    z-index: 1000;
+}

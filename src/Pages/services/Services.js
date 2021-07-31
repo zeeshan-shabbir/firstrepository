@@ -16,7 +16,7 @@ export default function Services() {
             <div className="container-100 service-cont capitalize">
                 <div className=" center"><h1 className="serv-h1">SERVICES</h1></div>
                 <div className="servs-wrapper">
-                    <div className="sevs-row flex align-center justify-between flexwrap">
+                    <div className="sevs-row flex align-center justify-between">
                     {serData.map((item) => (
                         
                             <SerCard key={item.id}  data={item}></SerCard>

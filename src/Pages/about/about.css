@@ -1,24 +1,24 @@
 @import "../../css folder/variable.css";
 .about{
     margin-top: -10px;
-    padding: 40px 0px 60px 0px;
+    padding: 4rem 0px 6rem 0px;
     background-color: white ;
 }
-.row1{
-    margin: 20px 40px;
+.aboutRow{
+    margin: 2rem 4rem;
 }
 .about_cols{
     width: 50%;
-    margin: 0px 10px;
+    margin: 0px 1rem;
 }
 .about-para{
-    margin: 15px 10px;
+    margin: 1.5rem 0rem;
     text-align: justify;
     word-spacing: 0.075rem;
     font-family: var(--primary-font);
     color: #555;
     /* color: white; */
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 .skills_power{
     background-color: var(--primary_color);
@@ -27,11 +27,11 @@
 .skill-h1 h1{
     font-weight: lighter;
     font-family: var(--primary-font);
-    padding: 5px 0px;
+    padding: 0.5rem 0px;
     /* color: white; */
 }
 .progress{
-    height: 20px;
+    height: 2rem;
     background-color: #e9ecef;
     /* border: 2px solid #000000; */
 }
@@ -52,10 +52,13 @@
 }
 .aboutBtn{
     position: relative;
-    left: 40%;
-    top: 10px;
+    text-align: center;
+
+    /* left: 40%; */
+    top: 1rem;
+    /* display: inline-block; */
 }
 .cvbtn{
-    font-size: 25px !important;
+    font-size: 2.5rem !important;
 
 }

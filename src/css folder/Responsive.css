@@ -1,0 +1,87 @@
+@media screen and (min-width: 1500px) {
+    :root{
+        font-size: 100%;
+    }
+    .container{
+        max-width: 100%;
+    }
+
+  }
+@media screen and (max-width: 1200px) {
+    :root{
+        font-size: 65%;
+    }
+  }
+/* @media screen and (max-width: 1150px) {
+    :root{
+        font-size: 60%;
+    }
+  } */
+@media screen and (max-width: 900px) {
+    :root{
+        font-size: 50%;
+    }
+    .Logo{
+      margin-left: 3rem;
+    }
+    .about_h1,.serv-h1,.work-h1,.contact-h1 {
+      font-size: 4rem;
+  }
+    .aboutRow,.workRows{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .aboutRow {
+      margin: 2rem 3rem  !important;
+  }
+    .sevs-row {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .about_cols{
+      width: 100% !important; 
+    }
+    .works,.services {
+      width: 60% !important; 
+      margin: 2rem 1rem;
+    }
+    .services {
+      width: 70% !important; 
+      margin: 2rem 1rem;
+    }
+  }
+@media screen and (max-width: 750px) {
+  :root{
+    /* font-size: 45%; */
+  }
+  .works{
+    width: 50% !important;
+  }
+  .cont-form{
+    width: 85% !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  :root{
+    /* font-size: 40%; */
+  }
+  .works{
+    width: 70% !important;
+  }
+  .services {
+    width: 100% !important; 
+    margin: 2rem 0rem;
+    }
+    .feilds div{
+      width: 100% !important;
+      margin-bottom: 1rem;
+    }
+    .feilds, .msg-feilds {
+      display: flex;
+      margin-top: 0 !important;
+      flex-direction: column;
+  }
+  .btn-inp{
+    text-align: center;
+  }
+  }

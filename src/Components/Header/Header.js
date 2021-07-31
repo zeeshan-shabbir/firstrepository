@@ -1,12 +1,40 @@
-import React, {useState,useEffect}from 'react'
+import React, { useState, useEffect } from 'react'
 import { NavLink } from "react-router-dom";
+import Burger from './Burger/Burger';
 import "./Header.css"
-
-export default function Header() {
+function Navbar() {
     const isActive = {
         fontWeight: "bold",
         color: "var(--secondary_color)",
     };
+    return (
+        <nav>
+            <ul className='flexallcenter'>
+                <li className="nav-item">
+                    <NavLink exact to="/" className='nav-Link' activeStyle={isActive}>Home</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink exact to="/About" className='nav-Link' activeStyle={isActive}>About</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink exact to="/Services" className='nav-Link' activeStyle={isActive}>Services</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink exact to="/Testimonials" className='nav-Link' activeStyle={isActive}>Testimonials</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink exact to="/My_work" className='nav-Link' activeStyle={isActive}>My Work</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink exact to="/Contact" className='nav-Link' activeStyle={isActive}>Contact</NavLink>
+                </li>
+            </ul>
+        </nav>
+    )
+}
+
+export default function Header() {
+
     const [header, setHeader] = useState("header")
 
     const listenScrollEvent = (event) => {
@@ -23,40 +51,44 @@ export default function Header() {
         return () =>
             window.removeEventListener('scroll', listenScrollEvent);
     }, []);
+    const size = useWindowSize();
+    function useWindowSize() {
+        const [windowSize, setWindowSize] = useState({
+            width: undefined,
+            height: undefined,
+        });
+        useEffect(() => {
+            function handleResize() {
+                setWindowSize({
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                });
+            }
+            window.addEventListener("resize", handleResize);
+            handleResize();
+            return () => window.removeEventListener("resize", handleResize);
+        }, []);
+        return windowSize;
+    }
+    const width = size.width
+    const isMobile = width < 800
+    const isPc = width > 800
+
     return (
         <div>
-      {/* className="container-100 bg-white shadow fixed" */}
-                <div className={header}>
-                    <div className='container  flex justify-between align-center '>
-                        <div className='Logo'>
-                            <NavLink exact to="/" className='nav-Link'>  <p className="Logo-text">My Logo</p></NavLink>
-                            {/* <img src={logo} className="logo" alt="logo" /> */}
+            {isMobile && <Burger />}
 
-                        </div>
-                        <nav>
-                            <ul className='flexallcenter'>
-                                <li className="nav-item">
-                                    <NavLink exact to="/" className='nav-Link' activeStyle={isActive}>Home</NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink exact to="/About" className='nav-Link' activeStyle={isActive}>About</NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink exact to="/Services" className='nav-Link' activeStyle={isActive}>Services</NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink exact to="/Testimonials" className='nav-Link' activeStyle={isActive}>Testimonials</NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink exact to="/My_work" className='nav-Link' activeStyle={isActive}>My Work</NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink exact to="/Contact" className='nav-Link' activeStyle={isActive}>Contact</NavLink>
-                                </li>
-                            </ul>
-                        </nav>
+            <div className={header}>
+                <div className='container  flex justify-between align-center '>
+                    <div className='Logo'>
+                        <NavLink exact to="/" className='nav-Link'>  <p className="Logo-text">My Logo</p></NavLink>
+                        {/* <img src={logo} className="logo" alt="logo" /> */}
+
                     </div>
+                    {/* <Navbar />  */}
+                    {isPc && <Navbar />}
                 </div>
+            </div>
         </div>
     )
 }

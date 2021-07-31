@@ -13,7 +13,7 @@ export  const About = () => {
                     <h1 className="about_h1">About Me</h1>
                 </div>
                 <div className="container-100">
-                    <div className="row1 flex">
+                    <div className="aboutRow flex ">
                         <Fade left  duration={2500}> 
                             <div className="about_cols col-1">
                                 <div className="about_paras">
