@@ -1,0 +1,65 @@
+@import "../../css folder/variable.css";
+.about{
+    margin-top: -10px;
+    padding: 4rem 0px 6rem 0px;
+    background-color: white ;
+}
+.aboutRow{
+    margin: 2rem 4rem;
+}
+.about_cols{
+    width: 50%;
+    margin: 0px 1rem;
+}
+.about-para{
+    margin: 1.5rem 0rem;
+    text-align: justify;
+    word-spacing: 0.075rem;
+    font-family: var(--primary-font);
+    color: #555;
+    /* color: white; */
+    font-size: 1.8rem;
+}
+.skills_power{
+    background-color: var(--primary_color);
+    height: 100%;
+}
+.skill-h1 h1{
+    font-weight: lighter;
+    font-family: var(--primary-font);
+    padding: 0.5rem 0px;
+    font-size: 3rem;
+    /* color: white; */
+}
+.progress{
+    height: 2rem;
+    background-color: #e9ecef;
+    /* border: 2px solid #000000; */
+}
+.html_power{
+    width: 85%;
+}
+.css_power{
+    width: 90%;
+}
+.bootstrap_power{
+    width: 85%;
+}
+.js_power{
+    width: 80%;
+}
+.jquery_power{
+    width: 70%;
+}
+.aboutBtn{
+    position: relative;
+    text-align: center;
+
+    /* left: 40%; */
+    top: 1rem;
+    /* display: inline-block; */
+}
+.cvbtn{
+    font-size: 2.5rem !important;
+
+}

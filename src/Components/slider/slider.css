@@ -1,0 +1,128 @@
+.fade-in {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  @keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-100%);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
+  @keyframes fadeInUp {
+    0% {
+       opacity: 0;
+      
+       transform: translateY(100%);
+    }
+
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
+  @keyframes fadeInRigth {
+    0% {
+       opacity: 0;
+       transform: translateX(-50%);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }
+  @keyframes fadeIn {
+    0% {opacity:0;color: red;}
+    100% {opacity:1;}
+  }
+ .swiper-slide-active .slide1-h1{
+    animation-name: fadeInDown;
+    animation-duration: 3s;
+    opacity: 1;
+  }
+ .swiper-slide-active .slide1-p{
+    animation-name: fadeInUp;
+    animation-duration: 3s;
+    opacity: 1;
+  }
+ .swiper-slide-active .slide1-btn{
+    animation-name: fadeInRigth;
+    animation-duration: 3s;
+    opacity: 1;
+  }
+  .animation {
+    /* animation: fadeIn 5s linear 2s ; */
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    opacity: 1;
+    /* width: 100%;
+    padding: 10px 20px 30px 0; */
+  }
+  .slide {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slide-1 {
+    background-image: url("../../images/slider/slider-01.jpg");
+}
+.slide-2 {
+    background-image: url("../../images/slider/slider-02.jpg");
+}
+.wrapper{
+    position: relative;
+    height: 100%;
+    padding-top: 10rem;
+    /* font-size: 100%; */
+}
+ .slide-content {
+     /* position: absolute;
+     top: 30%;
+     left: 7%; */
+     color: #fff;
+}
+.myintro{
+    padding: 2rem;
+} 
+ .myintro h1 {
+     font-size: 7rem;
+} 
+ .myintro p{
+     font-size: 5.5rem;
+     text-align: center;
+} 
+.introbtn{
+    font-size: 4rem;
+}
+.my-pic-box{
+    /* position: absolute;
+    top: 20%;
+    right: 5%; */
+}
+.my-img{
+    height: 45rem;
+    width: 40rem;
+    border: 3px solid #ffffff;
+    padding: 0.5rem;
+    border-radius: 50%;
+}

@@ -1,0 +1,80 @@
+@import "../../css folder/variable.css";;
+.workRows{
+    position: relative;
+}
+.works{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    color:white;
+    border-radius: 1rem;
+    overflow: hidden !important;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.work-img{
+    height: 100%;
+    width: 100%;
+}
+.works:hover{
+    transition: all .3s ease;
+    transform: scale(1.04);
+    
+}
+.works:hover > .work-intro{
+    animation: animateup .3s linear 0s 1 alternate;
+    opacity: 1;
+   
+}
+@keyframes animateup{
+
+    0%   {opacity:0}
+    25%   {opacity:0.3}
+    50%   {opacity:0.5}
+    75%  {opacity:0.7}
+    100%  {opacity:1}
+}
+
+.work-intro{
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    padding: 25% 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.302);
+}
+.works-contents{
+    position: absolute;
+    bottom: 1rem;
+    z-index: 100;
+}
+.works-contents p{
+    font-size: 2rem;
+    font-weight: bolder;   
+}
+
+.proIntro{
+    font-size: 2rem;
+    width: 70%;
+    margin:1rem  auto;
+    text-align: justify;
+    font-family:var(--primary-font) ;
+}
+.projLink{
+    border: 3px solid white;
+    border-radius: 3rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    color: white !important;
+    cursor: pointer;
+}
+.projLink:hover{
+    background-color: var(--secondary_color);
+    transition: all .3s ease-out;
+}
+.hrline{
+    border-bottom: 2px solid rgba(121, 121, 121, 0.508);
+    position: relative;
+    top: 40px;
+}

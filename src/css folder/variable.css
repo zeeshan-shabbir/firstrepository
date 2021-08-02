@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+    --primary-font:'Nunito', sans-serif;
+    --secondary-font:'Oxygen', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    --primary_color:#0008ffcc;
+    --secondary_color:orange;
+    font-size: 62.5%;
+}

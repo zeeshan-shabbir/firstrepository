@@ -6,31 +6,43 @@ import {
 } from "react-router-dom";
 import '../css folder/App.css'
 import '../css folder/utilities.css'
+import "../css folder/Responsive.css"
 
-import Header from "../Components/Header";
-import { About } from "../Pages/About ";
-import { Home } from "../Pages/Home";
-import My_work from "../Pages/My_work";
-import Services from "../Pages/Services";
+import Header from "../Components/Header/Header";
+import { About } from "../Pages/about/About ";
+import { Home } from "../Pages/home/Home";
+import My_work from "../Pages/work/My_work";
+import Services from "../Pages/services/Services";
+import Contact from "../Pages/contact/Contact";
+import FullWidthBg from '../Components/fullWidthBg'
+import Footer from "../Components/Footer";
 
- const AppRouting = () => {
+const AppRouting = () => {
     return (
         <Router>
             <Header />
             <Switch>
-            <Route exact path="/">
-                <Home />
-            </Route>
-            <Route exact path="/about">
-                <About />
-            </Route>
-            <Route exact path="/My_work">
-                <My_work />
-            </Route>
-            <Route exact path="/Services">
-                <Services />
-            </Route>
-            </Switch>          
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route exact path="/about">
+                    <FullWidthBg />
+                    <About />
+                </Route>
+                <Route exact path="/My_work">
+                    <FullWidthBg />
+                    <My_work />
+                </Route>
+                <Route exact path="/Services">
+                    <FullWidthBg />
+                    <Services />
+                </Route>
+                <Route exact path="/Contact">
+                    <FullWidthBg />
+                    <Contact />
+                </Route>
+            </Switch>
+            {/* <Footer /> */}
         </Router>
     )
 }
