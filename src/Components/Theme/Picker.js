@@ -12,13 +12,13 @@ export default function Picker() {
     root.style.setProperty('--primary_color', priColor);
     return (
         <div className="picker">
-            <button onClick={() => setshowpicker(showpicker => !showpicker)}>{showpicker ? "X" : "Theme"}</button>
+            <button  onClick={() => setshowpicker(showpicker => !showpicker)}>{showpicker ? "X" : "Theme"}</button>
 
             {showpicker && <div>
-                <button onClick={() => setShowPri(showPri => !showPri)}>{showPri ? "X" : "Primary Color"}</button>
+                <button className="pBtn" onClick={() => setShowPri(showPri => !showPri)}>{showPri ? "X" : "Primary Color"}</button>
                 {showPri && (<ChromePicker
-                    color={secColor}
-                    onChange={(secColor) => { setSecColor(secColor.hex) }}
+                   color={priColor}
+                   onChange={(priColor) => { setPriColor(priColor.hex) }}
                 />
                 )}
 
@@ -29,8 +29,9 @@ export default function Picker() {
                   <button onClick={() => setShowSec(showSec => !showSec)}>{showSec ? "X" : "secondary Color"}</button>
                   {showSec && (
                       <ChromePicker
-                          color={priColor}
-                          onChange={(priColor) => { setPriColor(priColor.hex) }}
+                      color={secColor}
+                      onChange={(secColor) => { setSecColor(secColor.hex) }}
+                          
                       />
                   )}
               </div>

@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function WorkCard(props) {
     const { data } = props;
-    console.log(data.image);
     return (
      
              <div className="works">

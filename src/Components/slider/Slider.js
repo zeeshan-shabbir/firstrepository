@@ -24,11 +24,11 @@ export default function AppSlider() {
         // effect: 'slide',
         effect: 'fade',
         loop:true,
-        autoplay: {
-            delay: 6000,
-            disableOnInteraction: true,
-            pauseOnMouseEnter:true,
-        },
+        // autoplay: {
+        //     delay: 6000,
+        //     disableOnInteraction: true,
+        //     pauseOnMouseEnter:true,
+        // },
     };
 
     return (
@@ -38,7 +38,7 @@ export default function AppSlider() {
             <SwiperSlide>
             <div>
                     <div className='slide slide-1'>
-                        <div className=" capitalize">
+                        <div className="wrapper capitalize flex justify-around align-center">
                             <div className="myintro slide-content">
                                 <h1 className="slide1-h1"> zeeshan shabbir</h1>
                                 <p className="slide1-p">
@@ -49,9 +49,9 @@ export default function AppSlider() {
                                 </div>
                             </div>
                             <div className="my-pic-box">
-                                <div>
-                                    <img className="my-img" src={ZeeshanImg} alt="Zeeshan Web developer" width='100%' height='100%' />
-                                </div>
+                              
+                                    <img className="my-img" src={ZeeshanImg} alt="Zeeshan Web developer" />
+                               
                             </div>
                         </div>
                     </div>

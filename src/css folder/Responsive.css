@@ -9,18 +9,33 @@
   }
 @media screen and (max-width: 1200px) {
     :root{
-        font-size: 65%;
-    }
-  }
-/* @media screen and (max-width: 1150px) {
-    :root{
         font-size: 60%;
     }
-  } */
+  }
+@media screen and (max-width: 1050px) {
+    :root{
+        font-size: 52%;
+    }
+  }
 @media screen and (max-width: 900px) {
     :root{
-        font-size: 50%;
+        font-size: 47%;
     }
+
+   .myintro h1 {
+       font-size: 6rem !important;
+  } 
+   .myintro p{
+       font-size: 4.5rem !important;
+  } 
+  .introbtn{
+      font-size: 3rem !important;
+  }
+  .my-img{
+      height: 35rem !important;
+      width: 30rem !important;
+  }
+    
     .Logo{
       margin-left: 3rem;
     }
@@ -54,6 +69,18 @@
   :root{
     /* font-size: 45%; */
   }
+  .myintro {
+    padding: 0 2rem !important;
+}
+  .myintro h1 {
+    font-size: 5rem !important;
+} 
+.myintro p{
+    font-size: 3.5rem !important;
+} 
+.introbtn{
+   font-size: 2rem !important;
+}
   .works{
     width: 50% !important;
   }
@@ -64,6 +91,17 @@
 @media screen and (max-width: 550px) {
   :root{
     /* font-size: 40%; */
+  }
+.myintro p{
+    font-size: 4rem !important;
+} 
+.introbtn{
+   font-size: 3rem !important;
+}
+  .wrapper{
+  flex-wrap: wrap-reverse;
+  justify-self: center !important;
+  padding: 10rem 0 !important;
   }
   .works{
     width: 70% !important;

@@ -89,10 +89,16 @@
 .slide-2 {
     background-image: url("../../images/slider/slider-02.jpg");
 }
+.wrapper{
+    position: relative;
+    height: 100%;
+    padding-top: 10rem;
+    /* font-size: 100%; */
+}
  .slide-content {
-     position: absolute;
+     /* position: absolute;
      top: 30%;
-     left: 7%;
+     left: 7%; */
      color: #fff;
 }
 .myintro{
@@ -109,14 +115,14 @@
     font-size: 4rem;
 }
 .my-pic-box{
-    position: absolute;
+    /* position: absolute;
     top: 20%;
-    right: 5%;
+    right: 5%; */
 }
 .my-img{
     height: 45rem;
     width: 40rem;
     border: 3px solid #ffffff;
+    padding: 0.5rem;
     border-radius: 50%;
 }
-

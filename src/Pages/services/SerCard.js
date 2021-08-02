@@ -8,8 +8,6 @@ export default function SerCard(props){
         fontSize: 60
       };
     const { data } = props;
-    console.log(data);
-    console.log(data.title);
  
     return (
         <>

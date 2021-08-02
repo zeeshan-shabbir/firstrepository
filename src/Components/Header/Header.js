@@ -2,39 +2,15 @@ import React, { useState, useEffect } from 'react'
 import { NavLink } from "react-router-dom";
 import Burger from './Burger/Burger';
 import "./Header.css"
-function Navbar() {
+import "./Navbars/Navbar.css"
+import Navbar from "./Navbars/Navbar" 
+import resNavBar from './Navbars/ResNavBar';
+
+export default function Header() {
     const isActive = {
         fontWeight: "bold",
         color: "var(--secondary_color)",
     };
-    return (
-        <nav>
-            <ul className='flexallcenter'>
-                <li className="nav-item">
-                    <NavLink exact to="/" className='nav-Link' activeStyle={isActive}>Home</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink exact to="/About" className='nav-Link' activeStyle={isActive}>About</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink exact to="/Services" className='nav-Link' activeStyle={isActive}>Services</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink exact to="/Testimonials" className='nav-Link' activeStyle={isActive}>Testimonials</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink exact to="/My_work" className='nav-Link' activeStyle={isActive}>My Work</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink exact to="/Contact" className='nav-Link' activeStyle={isActive}>Contact</NavLink>
-                </li>
-            </ul>
-        </nav>
-    )
-}
-
-export default function Header() {
-
     const [header, setHeader] = useState("header")
 
     const listenScrollEvent = (event) => {
@@ -77,7 +53,6 @@ export default function Header() {
     return (
         <div>
             {isMobile && <Burger />}
-
             <div className={header}>
                 <div className='container  flex justify-between align-center '>
                     <div className='Logo'>

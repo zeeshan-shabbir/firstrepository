@@ -18,19 +18,21 @@
     z-index: 1;  
     transform-origin: 2.8rem;  
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                /* background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), */
+                background 2s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
 }
 .topLineAnim{
 transform: rotate(-45deg);
 transform-origin: 2.75rem;
-/* margin-bottom:  0 !important; */
+background: #ffffff !important;
 }
 .midLineAnim{
-    /* display: none !important; */
     opacity: 0;
+    background: #ffffff !important;
 }
 .bottomLineAnim{
+    background: #ffffff !important;
     /* margin-bottom:  0 !important; */
     transform: rotate(45deg);
     transform-origin: 2.8rem;

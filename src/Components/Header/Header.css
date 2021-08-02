@@ -41,6 +41,9 @@
 .nav-item{
     margin: 0px 1rem;
 }
+.Logo {
+    margin-left: 1rem;
+}
 .Logo-text{
     /* color: var(--primary_color) !important; */
 }

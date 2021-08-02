@@ -1,7 +1,5 @@
 import React from 'react'
-// import "../work/work.css"
 import '../work/work.css'
-import image from "../../images/works/work-01.webp"
 import WorkData from "./WorkData"
 import WorkCard from './WorkCard';
 
@@ -9,7 +7,6 @@ import WorkCard from './WorkCard';
 
 
 export default function My_work() {
-    console.log(WorkData);
     const style = {
         fontSize: 60
       };

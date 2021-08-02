@@ -20,28 +20,28 @@ export default function Contact() {
                 <form action="" className="cont-form" style={form_style}>
                     <div className="feilds flex justify-between ">
                         <div className="fname">
-                            <input type="text" className="form-feild" placeholder="Your first name *" required />
+                            <input type="text" className="form-feild" placeholder="first name *" required />
                         </div>
                         <div className="lname">
-                            <input type="text" className="form-feild " placeholder="Your last name *" required />
+                            <input type="text" className="form-feild " placeholder="last name *" required />
                         </div>
                     </div>
                     <div className="feilds flex justify-between">
                         <div className="email">
-                            <input type="text" className="form-feild" placeholder="Your email *" required/>
+                            <input type="email" className="form-feild" placeholder="email *" required/>
                         </div>
                         <div className="phone">
-                            <input type="text" className="form-feild" placeholder="Your phone *" required/>
+                            <input type="phone" className="form-feild" placeholder="phone *" required/>
                         </div>
                     </div>
                     <div className="msg-feilds">
                         <div className="message">
-                            <textarea name="" id="" placeholder="your message for me *" className="form-feild" required></textarea>
+                            <textarea name="" id="" placeholder="message for me *" className="form-feild" required></textarea>
                         </div>
                     </div>
                  
                         <div className="btn-inp">
-                            <input type="button" value="Send message" className="btn contbtn" />
+                            <input type="submit" value="Send message" className="btn contbtn" />
                         </div>
                 
                 </form>
