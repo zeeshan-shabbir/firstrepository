@@ -45,7 +45,7 @@ export default function AppSlider() {
                                     front  end <br /> web developer
                                 </p>
                                 <div className="center slide1-btn">
-                                    <a className='btn introbtn center' href="https://www.facebook.com" target="_blank">Contact me</a>
+                                    <a className='btn introbtn center' href="https://www.facebook.com" target="_blank" rel="noreferrer">Contact me</a>
                                 </div>
                             </div>
                             <div className="my-pic-box">
@@ -68,7 +68,7 @@ export default function AppSlider() {
                                     front  end <br /> web developer
                                 </p>
                                 <div className="center slide2-btn">
-                                <a className='btn introbtn center' href="https://www.facebook.com" target="_blank">Contact me</a>
+                                <a className='btn introbtn center' href="https://www.facebook.com" target="_blank"  rel="noreferrer">Contact me</a>
                                 </div>
                             </div>
                             <div className="my-pic-box">

@@ -9,6 +9,7 @@ import Picker from '../../Components/Theme/Picker'
 
 
 export const Home = () => {
+    console.log("rendering");
     return (
         <div className="home">
          

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./service.css"
 import { FaHtml5 } from 'react-icons/fa';
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 export default function SerCard(props){
     const style = {
@@ -11,7 +11,7 @@ export default function SerCard(props){
  
     return (
         <>
-        <Fade bottom duration={2000}>
+        {/* <Fade bottom duration={2000}> */}
             <div className="services ">
                 <div className="serv-logo center">
                     <FaHtml5 style={style} />
@@ -23,7 +23,7 @@ export default function SerCard(props){
                     {data.description}
                 </div>
             </div>
-            </Fade>
+            {/* </Fade> */}
         </>
     )
 }

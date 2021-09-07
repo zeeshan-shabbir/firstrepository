@@ -14,7 +14,7 @@ export  const About = () => {
                 </div>
                 <div className="container-100">
                     <div className="aboutRow flex ">
-                        <Fade left  duration={2500}> 
+                        {/* <Fade left  duration={2500}>  */}
                             <div className="about_cols col-1">
                                 <div className="about_paras">
                                     <p className="about-para">
@@ -28,8 +28,8 @@ export  const About = () => {
                         </p>
                                 </div>
                             </div>
-                        </Fade>
-                        <Fade  right duration={2500}>
+                        {/* </Fade> */}
+                        {/* <Fade  right duration={2500}> */}
                         <div className="about_cols col-2">
                             <div className="skills_indicator capitalize">
                                 <div className="skill_1">
@@ -64,7 +64,7 @@ export  const About = () => {
                                 </div>
                             </div>
                         </div>
-                        </Fade  >
+                        {/* </Fade  > */}
                     </div>
                     <div className="aboutBtn">
                             <button className="btn cvbtn">

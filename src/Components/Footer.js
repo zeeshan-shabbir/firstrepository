@@ -42,7 +42,7 @@ export default function Footer() {
              
           </div>
           <div className="copyright center">
-          <p>© 2019 <strong><a href="">Zeeshan Shabbir</a></strong> All rights reserved.</p>
+          <p>© 2019 <strong><a href="https://www.facebook.com/Zeeehope" target="_blank" rel="noreferrer">Zeeshan Shabbir</a></strong> All rights reserved.</p>
 
           </div>
         </div>
