@@ -24,11 +24,11 @@ export default function AppSlider() {
         // effect: 'slide',
         effect: 'fade',
         loop:true,
-        autoplay: {
-            delay: 6000,
-            disableOnInteraction: true,
-            pauseOnMouseEnter:true,
-        },
+        // autoplay: {
+        //     delay: 6000,
+        //     disableOnInteraction: true,
+        //     pauseOnMouseEnter:true,
+        // },
     };
 
     return (
@@ -61,14 +61,14 @@ export default function AppSlider() {
             <SwiperSlide>
             <div>
                     <div className='slide slide-2'>
-                    <div className="wrapper capitalize flex justify-around align-center">
+                        <div className=" capitalize">
                             <div className="myintro slide-content">
                                 <h1 className="slide2-h1"> zeeshan shabbir</h1>
                                 <p className="slide2-p">
                                     front  end <br /> web developer
                                 </p>
-                                <div className="center slide2-btn">
-                                <a className='btn introbtn center' href="https://www.facebook.com" target="_blank">Contact me</a>
+                                <div className="center slide1-btn">
+                                    <button className='btn introbtn center'>zeeshan me</button>
                                 </div>
                             </div>
                             <div className="my-pic-box">
