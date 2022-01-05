@@ -5,13 +5,17 @@ export default function WorkCard(props) {
     return (
 
         <div className="works">
-            <div className="">
+            <div className="workimg">
                 {/* <i> */}
                 <img src={data.image} alt="" className="work-img" />
                 {/* </i> */}
             </div>
+            {/* <div className="proTitle">
+            <h1 className="proName">
+                    {data.name}
+                </h1>
+            </div> */}
             <div className="work-intro center">
-
                 <h1 className="proName">
                     {data.name}
                 </h1>

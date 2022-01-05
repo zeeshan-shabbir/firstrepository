@@ -73,6 +73,7 @@ export  const About = () => {
                         </div>
                 </div>
             </div>
+            <div className="hrline"></div>
         </>
     )
 }

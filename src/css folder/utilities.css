@@ -117,3 +117,35 @@ input{
 .border{
     border: 2px solid black;
 }
+.hrline{
+    border-bottom: 2px solid rgba(121, 121, 121, 0.508);
+    position: relative;
+    /* top: 40px; */
+}
+.btn{
+    cursor: pointer;
+    padding: 5px 10px;
+    color: black;
+    background-color:transparent;
+    border: 2px solid black;
+    border: none;
+    transition: all .3s ease;
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+.btn:hover{
+    transition:all .3s ease-in;
+    /* background-color:rgba(0, 0, 0, 0.727); */
+    background-color:var(--primary_color);
+    color: white !important;
+    border: none;
+    box-shadow: none;
+    opacity: 1;
+    margin-left: 10px;
+
+}

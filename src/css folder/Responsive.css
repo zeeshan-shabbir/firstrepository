@@ -103,6 +103,11 @@
   justify-self: center !important;
   padding: 10rem 0 !important;
   }
+  .fullBgwrapper{
+  flex-wrap: wrap-reverse;
+  /* justify-self: center !important; */
+  padding: 10rem 0 !important;
+  }
   .works{
     width: 70% !important;
   }

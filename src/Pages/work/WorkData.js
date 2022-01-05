@@ -5,7 +5,7 @@ const WorkData=[
         id:1,
         name:"web development",
         link:"https://www.facebook.com",
-        description:"i will design Or customize your website using modern  ipsum d amet.",
+        description:"i will design Or customize your website using modern ipsum d amet.",
         image:img1,
     },
     {

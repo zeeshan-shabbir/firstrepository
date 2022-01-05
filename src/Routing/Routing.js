@@ -26,19 +26,19 @@ const AppRouting = () => {
                     <Home />
                 </Route>
                 <Route exact path="/about">
-                    <FullWidthBg />
+                    <FullWidthBg routeName={"About"}/>
                     <About />
                 </Route>
                 <Route exact path="/My_work">
-                    <FullWidthBg />
+                    <FullWidthBg routeName={"Work"}/>
                     <My_work />
                 </Route>
                 <Route exact path="/Services">
-                    <FullWidthBg />
+                    <FullWidthBg  routeName={"Services"}/>
                     <Services />
                 </Route>
                 <Route exact path="/Contact">
-                    <FullWidthBg />
+                    <FullWidthBg routeName={"Contact"}/>
                     <Contact />
                 </Route>
             </Switch>

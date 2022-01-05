@@ -21,11 +21,10 @@ export default function Services() {
 
                       
                     ))}
-             
-                      
                     </div>
                 </div>
             </div>
+            <div className="hrline"></div>
         </div>
     )
 }

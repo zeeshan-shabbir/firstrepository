@@ -21,7 +21,42 @@ body{
     margin-top: 8rem;
     color: white !important;
 }
-
+/* bread crump */
+.breadcrump{
+    font-size: 4rem;
+    padding: 1.2rem 1rem;
+    padding-left: 5rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+ul.breadcrump-list{
+    transform: translateY(5px);
+    margin-left: 30px;
+    padding: 10px 0px;
+}
+ul.breadcrump-list li+li:before{
+    content: "/\00a0";
+}
+.breadCrump-link{
+    display: inline !important;
+    font-weight: bolder;
+}
+.react-rotating-text-cursor {
+    animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+  }
+  
+  @keyframes blinking-cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 /* full width backgroung images  */
 .full-Bg {
     width: 100vw;
@@ -30,6 +65,9 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-image: url("../images/full-bg/full-bg.jpg");
+    font-family: var(--secondary-font);
+    color:white;
 }
 .full-Bg::before {
     content: "";
@@ -40,10 +78,15 @@ body{
     height: 85vh;
     background-color: rgba(0, 0, 0, 0.3);
 }
-.full-Bg{
-    background-image: url("../images/full-bg/full-bg.jpg");
+.fullBgwrapper{
+    position: relative;
+    height: 100%;
+    /* padding-top: 10rem; */
 }
-
+.zeeshan{
+    align-self: end;
+   
+}
 /* footer start here  */
 .footer a{
     color: white !important;
@@ -85,27 +128,4 @@ body{
 .copyright p,.copyright a{
     color: black !important;
 }
-.btn{
-    cursor: pointer;
-    padding: 5px 10px;
-    color: black;
-    background-color:transparent;
-    border: 2px solid black;
-    border: none;
-    transition: all .3s ease;
-    display: inline-block;
-    margin: 10px 0px;
-    padding: 10px 20px;
-    text-align: center;
-    text-transform: capitalize;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-}
-.btn:hover{
-    transition:      .3s ease;
-    background-color:transparent;
-    border: 1px solid rgba(0, 0, 0, 0.508) ;
-    box-shadow: none;
-    opacity: 1;
 
-}

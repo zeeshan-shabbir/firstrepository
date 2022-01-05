@@ -1,5 +1,6 @@
 import React from 'react'
-import ZeeshanImg from '../../images/zeeshan/zee1.jpg'
+// import ZeeshanImg from '../../images/zeeshan/zee1.jpg'
+import ZeeshanImg from '../../images/zeeshan/Zeeshan pic (1).png'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -45,7 +46,7 @@ export default function AppSlider() {
                                     front  end <br /> web developer
                                 </p>
                                 <div className="center slide1-btn">
-                                    <a className='btn introbtn center' href="https://www.facebook.com" target="_blank" rel="noreferrer">Contact me</a>
+                                    <a className='btn introbtn center' href="https://www.facebook.com" target="_blank" rel="noreferrer">HIRE ME</a>
                                 </div>
                             </div>
                             <div className="my-pic-box">
@@ -68,7 +69,7 @@ export default function AppSlider() {
                                     front  end <br /> web developer
                                 </p>
                                 <div className="center slide2-btn">
-                                <a className='btn introbtn center' href="https://www.facebook.com" target="_blank"  rel="noreferrer">Contact me</a>
+                                <a className='btn introbtn center' href="https://www.facebook.com" target="_blank"  rel="noreferrer">Hire me</a>
                                 </div>
                             </div>
                             <div className="my-pic-box">

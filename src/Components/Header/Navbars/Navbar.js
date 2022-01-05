@@ -17,9 +17,9 @@ export default function Navbar() {
                 <li className="nav-item">
                     <NavLink exact to="/Services" className='nav-Link' activeStyle={isActive}>Services</NavLink>
                 </li>
-                <li className="nav-item">
-                    <NavLink exact to="/Testimonials" className='nav-Link' activeStyle={isActive}>Testimonials</NavLink>
-                </li>
+                {/* <li className="nav-item">
+                    <NavLink exact to="/Testimonials"  className='nav-Link' activeStyle={isActive}>Testimonials</NavLink>
+                </li> */}
                 <li className="nav-item">
                     <NavLink exact to="/My_work" className='nav-Link' activeStyle={isActive}>My Work</NavLink>
                 </li>

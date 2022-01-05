@@ -51,7 +51,17 @@
     font-size: 2rem;
     font-weight: bolder;   
 }
-
+.proName{
+    /* border-bottom: 1px solid var(--primary_color); */
+    width: 70%;
+    margin: auto;
+    /* text-decoration: underline; */
+    /* background-color: var(--secondary_color); */
+    padding-bottom: 3px;
+    border-bottom: 3px solid var(--primary_color);
+    /* text-decoration-color: var(--primary_color); */
+    /* color: var(--primary_color); */
+}
 .proIntro{
     font-size: 2rem;
     width: 70%;
