@@ -56,21 +56,6 @@
     animation-duration: 3s;
     opacity: 1;
   }
- .swiper-slide-active .slide2-h1{
-    animation-name: fadeInUp;
-    animation-duration: 3s;
-    opacity: 1;
-  }
- .swiper-slide-active .slide2-p{
-    animation-name: fadeInRigth;
-    animation-duration: 3s;
-    opacity: 1;
-  }
- .swiper-slide-active .slide2-btn{
-    animation-name: fadeInDown;
-    animation-duration: 3s;
-    opacity: 1;
-  }
   .animation {
     /* animation: fadeIn 5s linear 2s ; */
     animation-name: fadeIn;
@@ -142,11 +127,6 @@
     background-color: var(--secondary_color) !important;
     color: black !important;
 }
-.my-pic-box{
-    /* position: absolute;
-    top: 20%;
-    right: 5%; */
-  }
   .my-img{
     height: 80vh;
     width: 45rem;
