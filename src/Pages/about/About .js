@@ -33,31 +33,31 @@ export  const About = () => {
                         <div className="about_cols col-2">
                             <div className="skills_indicator capitalize">
                                 <div className="skill_1">
-                                    <div className="skill-h1"><h1>Html</h1> </div>
+                                    <div className="skill-h1"><h1>Html/css</h1> </div>
                                     <div className=" progress">
                                         <div className="skills_power html_power"></div>
                                     </div>
                                 </div>
                                 <div className="skill_2">
-                                    <div className="skill-h1"><h1>css</h1> </div>
+                                    <div className="skill-h1"><h1>bootstrap/materil ui</h1> </div>
                                     <div className=" progress">
                                         <div className="skills_power css_power"></div>
                                     </div>
                                 </div>
                                 <div className="skill_3">
-                                    <div className="skill-h1"><h1>bootstrap</h1> </div>
+                                    <div className="skill-h1"><h1>javascript/react js</h1> </div>
                                     <div className=" progress">
                                         <div className="skills_power bootstrap_power"></div>
                                     </div>
                                 </div>
                                 <div className="skill_4">
-                                    <div className="skill-h1"><h1>javascript</h1> </div>
+                                    <div className="skill-h1"><h1>React native</h1> </div>
                                     <div className=" progress">
                                         <div className="skills_power js_power"></div>
                                     </div>
                                 </div>
                                 <div className="skill_5">
-                                    <div className="skill-h1"><h1>jquery</h1> </div>
+                                    <div className="skill-h1"><h1>Express/Mongodb </h1> </div>
                                     <div className=" progress">
                                         <div className="skills_power jquery_power"></div>
                                     </div>
@@ -73,7 +73,7 @@ export  const About = () => {
                         </div>
                 </div>
             </div>
-            <div className="hrline"></div>
+            {/* <div className="hrline"></div> */}
         </>
     )
 }

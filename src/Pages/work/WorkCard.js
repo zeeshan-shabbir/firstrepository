@@ -5,7 +5,7 @@ export default function WorkCard(props) {
     return (
 
         <div className="works">
-            <div className="workimg">
+            <div className="working">
                 {/* <i> */}
                 <img src={data.image} alt="" className="work-img" />
                 {/* </i> */}
@@ -15,7 +15,7 @@ export default function WorkCard(props) {
                     {data.name}
                 </h1>
             </div> */}
-            <div className="work-intro center">
+            <div className="work-intro center flexallcenter flex-direction-column">
                 <h1 className="proName">
                     {data.name}
                 </h1>
@@ -28,6 +28,7 @@ export default function WorkCard(props) {
                     </a>
                 </div>
             </div>
+                    
         </div>
 
     )

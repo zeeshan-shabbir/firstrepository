@@ -1,23 +1,24 @@
 
 import img1 from "../../images/works/work-01.webp"
+import img2 from "../../images/works/mathKu.png"
 const WorkData=[
     {
         id:1,
-        name:"web development",
+        name:"math website",
         link:"https://www.facebook.com",
-        description:"i will design Or customize your website using modern ipsum d amet.",
-        image:img1,
+        description:"design this math  website from scarth using html css jquery",
+        image:img2,
     },
     {
         id:2,
-        name:"portfolia  development",
+        name:"e-comerence",
         link:"https://www.facebook.com",
         description:"i will design Or customize your website using modern technologies. ",
         image:img1,
     },
     {
         id:3,
-        name:"blog development",
+        name:"Quiz app",
         link:"https://www.facebook.com",
         description:"i will design Or customize your website using Lorem ipsum dolamet.",
         image:img1,

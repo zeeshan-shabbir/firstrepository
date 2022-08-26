@@ -9,6 +9,20 @@
        transform: translateX(0);
     }
  }
+  @keyframes fadeInLeft {
+    0% {
+       /* opacity: 0; */
+       transform: translateX(50%);
+    }
+    100% {
+       /* opacity: 1; */
+       transform: translateX(0);
+    }
+ }
+ .fadeInLeft{
+   animation-name: fadeInLeft;
+   animation-duration: 1s;
+ }
 .resNavBar{
     background-color: rgb(0, 0, 0);
     color: white !important;

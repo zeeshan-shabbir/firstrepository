@@ -1,6 +1,11 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-export default function Navbar() {
+export default function Navbar({ scroll }) {
+    if (scroll > 400) {
+        document.documentElement.style.setProperty('--hoverColor', 'black');
+    } else {
+        document.documentElement.style.setProperty('--hoverColor', 'white');
+    }
     const isActive = {
         fontWeight: "bold",
         color: "var(--secondary_color)",
@@ -28,5 +33,7 @@ export default function Navbar() {
                 </li>
             </ul>
         </nav>
+
     )
 }
+

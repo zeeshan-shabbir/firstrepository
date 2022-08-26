@@ -21,23 +21,8 @@
     :root{
         font-size: 47%;
     }
-
-   .myintro h1 {
-       font-size: 6rem !important;
-  } 
-   .myintro p{
-       font-size: 4.5rem !important;
-  } 
-  .introbtn{
-      font-size: 3rem !important;
-  }
-  .my-img{
-      height: 35rem !important;
-      width: 30rem !important;
-  }
-    
     .Logo{
-      margin-left: 3rem;
+      margin-left: 3rem !important;
     }
     .about_h1,.serv-h1,.work-h1,.contact-h1 {
       font-size: 4rem;
@@ -69,6 +54,9 @@
   :root{
     /* font-size: 45%; */
   }
+  .nav-Link::before {
+    display: none !important;
+}
   .myintro {
     padding: 0 2rem !important;
 }
@@ -76,11 +64,20 @@
     font-size: 5rem !important;
 } 
 .myintro p{
-    font-size: 3.5rem !important;
+    font-size: 4rem !important;
 } 
-.introbtn{
-   font-size: 2rem !important;
+
+.my-img,.my-img2{
+  height: 37rem !important;
+  width: 28rem !important;
 }
+/* .my-img2 {
+  height: 70vh;
+  width: 40rem;
+  border: 3px solid #ffffff;
+  padding: 0.5rem;
+  border-radius: 50%;
+} */
   .works{
     width: 50% !important;
   }
@@ -92,16 +89,26 @@
   :root{
     /* font-size: 40%; */
   }
+  .slide {
+    height: 100% !important;
+  }
+
 .myintro p{
     font-size: 4rem !important;
 } 
 .introbtn{
    font-size: 3rem !important;
 }
+.my-img,.my-img2{
+  height: 30rem !important;
+  width: 28rem !important;
+}
   .wrapper{
-  flex-wrap: wrap-reverse;
-  justify-self: center !important;
-  padding: 10rem 0 !important;
+  flex-wrap: wrap-reverse !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding-bottom: 7rem !important;
+  height: 90vh !important;
   }
   .fullBgwrapper{
   flex-wrap: wrap-reverse;
@@ -111,6 +118,23 @@
   .works{
     width: 70% !important;
   }
+  .works:hover{
+    margin-left: 6rem !important;
+    /* border-radius: 30%; */
+    
+}
+  .work-intro{
+    padding: 15% 0% !important;
+  }
+  .proName{
+    font-size: 2.7rem !important;
+}
+.proIntro{
+    font-size: 2.3rem !important;
+}
+.projLink{
+    font-size: 2.3rem !important;
+}
   .services {
     width: 100% !important; 
     margin: 2rem 0rem;
@@ -127,4 +151,18 @@
   .btn-inp{
     text-align: center;
   }
+  
   }
+@media screen and (max-width: 350px){
+  .myintro h1 {
+      font-size: 4rem !important;
+  }
+  .myintro p {
+    font-size: 3.5rem !important;
+}
+.introbtn{
+  font-size: 2rem !important;
+}
+
+}
+  

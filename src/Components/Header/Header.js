@@ -12,11 +12,14 @@ export default function Header() {
         color: "var(--secondary_color)",
     };
     const [header, setHeader] = useState("header")
+    const [scroll, setScroll] = useState(0)
 
     const listenScrollEvent = (event) => {
         if (window.scrollY < 400) {
+            setScroll(399)
             return setHeader("header")
         } else if (window.scrollY > 400) {
+            setScroll(401)
             return setHeader("header2")
         }
     }
@@ -61,7 +64,7 @@ export default function Header() {
 
                     </div>
                     {/* <Navbar />  */}
-                    {isPc && <Navbar />}
+                    {isPc && <Navbar scroll={scroll} />}
                 </div>
             </div>
         </div>

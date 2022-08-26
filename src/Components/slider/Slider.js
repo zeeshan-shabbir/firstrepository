@@ -43,7 +43,7 @@ export default function AppSlider() {
                             <div className="myintro slide-content">
                                 <h1 className="slide1-h1"> zeeshan shabbir</h1>
                                 <p className="slide1-p">
-                                    front  end <br /> web developer
+                                   full stack web and <br />  app developer
                                 </p>
                                 <div className="center slide1-btn">
                                     <a className='btn introbtn center' href="https://www.facebook.com" target="_blank" rel="noreferrer">HIRE ME</a>
@@ -51,7 +51,7 @@ export default function AppSlider() {
                             </div>
                             <div className="my-pic-box">
                               
-                                    <img className="my-img" src={ZeeshanImg} alt="Zeeshan Web developer" />
+                                    <img className="my-img" src={ZeeshanImg} alt="Zeeshan Web and app developer" />
                                
                             </div>
                         </div>
@@ -66,16 +66,16 @@ export default function AppSlider() {
                             <div className="myintro slide-content">
                                 <h1 className="slide2-h1"> zeeshan shabbir</h1>
                                 <p className="slide2-p">
-                                    front  end <br /> web developer
+                                   full stack web and <br />  app developer
                                 </p>
                                 <div className="center slide2-btn">
-                                <a className='btn introbtn center' href="https://www.facebook.com" target="_blank"  rel="noreferrer">Hire me</a>
+                                <a className='btn introbtn center' href="https://www.facebook.com" target="_blank"  rel="noreferrer">HIRE ME</a>
                                 </div>
                             </div>
                             <div className="my-pic-box">
-                                <div>
-                                    <img className="my-img" src={ZeeshanImg} alt="Zeeshan Web developer" width='100%' height='100%' />
-                                </div>
+                                
+                                    <img className="my-img" src={ZeeshanImg} alt="Zeeshan Web and app developer" width='100%' height='100%' />
+                                
                             </div>
                         </div>
                     </div>

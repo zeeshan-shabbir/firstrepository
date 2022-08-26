@@ -34,11 +34,28 @@
     color: inherit ;
     font-size: 2.6rem;
     padding: 0px 0.5rem;
+    text-transform: capitalize !important;
     
 }
+.nav-Link::before {
+    content:'';
+    width:0%;
+    height:3px;
+    display:block;
+    background-color: var(--hoverColor);
+    margin-bottom:10px;
+}
+.black::before{
+    background-color: black;
+
+}
+  
 .nav-Link:hover{
-    transition: all .3s ease ;
-    color: var(--primary_color);
+  font-weight: bolder;
+}
+.nav-Link:hover::before {
+    width:100%;
+    transition:all .5s;
 }
 .nav-item{
     margin: 0px 1rem;

@@ -15,7 +15,7 @@ import My_work from "../Pages/work/My_work";
 import Services from "../Pages/services/Services";
 import Contact from "../Pages/contact/Contact";
 import FullWidthBg from '../Components/fullWidthBg'
-import Footer from "../Components/Footer";
+import Footer from "../Components/Footer/Footer";
 
 const AppRouting = () => {
     return (
@@ -42,7 +42,7 @@ const AppRouting = () => {
                     <Contact />
                 </Route>
             </Switch>
-            {/* <Footer /> */}
+            <Footer />
         </Router>
     )
 }

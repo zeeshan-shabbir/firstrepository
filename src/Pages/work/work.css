@@ -4,20 +4,26 @@
 }
 .works{
     position: relative;
-    height: 100%;
+    height: 30rem;
     width: 30%;
     color:white;
     border-radius: 1rem;
     overflow: hidden !important;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    box-shadow: rgba(60, 64, 67, 0.515) 0px 1px 2px 2px, rgba(60, 64, 67, 0.487) 0px 1px 3px 4px;
+    
 }
 .work-img{
     height: 100%;
     width: 100%;
 }
+.working{
+    height: 100%;
+}
 .works:hover{
     transition: all .3s ease;
     transform: scale(1.04);
+    /* border-radius: 30%; */
     
 }
 .works:hover > .work-intro{
@@ -38,9 +44,11 @@
     opacity: 0;
     position: absolute;
     top: 0%;
-    padding: 25% 0px;
+    height: 100%;
+    width: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.302);
+    background-color: rgba(0, 0, 0, 52%);
+    /* justify-content: space-evenly !important; */
 }
 .works-contents{
     position: absolute;
@@ -52,12 +60,9 @@
     font-weight: bolder;   
 }
 .proName{
+    font-size: 2.5rem;
     /* border-bottom: 1px solid var(--primary_color); */
     width: 70%;
-    margin: auto;
-    /* text-decoration: underline; */
-    /* background-color: var(--secondary_color); */
-    padding-bottom: 3px;
     border-bottom: 3px solid var(--primary_color);
     /* text-decoration-color: var(--primary_color); */
     /* color: var(--primary_color); */
@@ -65,9 +70,12 @@
 .proIntro{
     font-size: 2rem;
     width: 70%;
-    margin:1rem  auto;
+    padding:2rem 0;
+    font-style: italic;
+    /* background-color: rgba(56, 56, 56, 0.679); */
     text-align: justify;
-    font-family:var(--primary-font) ;
+    text-justify: inter-character;
+    /* font-family:var(--primary-font) ; */
 }
 .projLink{
     border: 3px solid white;

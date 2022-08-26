@@ -7,31 +7,35 @@ import ResNavBar from '../Navbars/ResNavBar';
 export default function Burger() {
     
     const [open, setOpen] = useState(false);
-    const [backgroundColor, setbackgroundColor] = useState("red");
-    const style={
-        backgroundColor:backgroundColor,
-    }
+    const [backgroundColor, setbackgroundColor] = useState("white");
     
 function Handlechange() {
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setOpen(!open);
-    //     },3000);
-    //   },[]);
     setOpen(!open);
-    setbackgroundColor("green");
+}
+const listenScrollEvent = (event) => {
+    if (window.scrollY < 400) {
+        return setbackgroundColor("white")
+    } else if (window.scrollY > 400) {
+        return setbackgroundColor("black")
+    }
 }
 
-    
-    console.log(open);
+useEffect(() => {
+    window.addEventListener('scroll', listenScrollEvent);
+    return () =>
+        window.removeEventListener('scroll', listenScrollEvent);
+}, []);
+
     return (
         <div className="Burger" id="burger" open={open} onClick={Handlechange} >
-            <div className="ToggleBTn">
-                <span  className={`topLine ${open ? "topLineAnim" : ""}`}></span>
+            <div className="ToggleBTn"  >
+                <span  style={{backgroundColor: backgroundColor}} className={`topLine ${open ? "topLineAnim" : ""}`}></span>
                 <span  className={`midLine ${open ? "midLineAnim" : ""}`}></span>
-                <span  className={`bottomLine ${open ? "bottomLineAnim" : ""}`}></span>
+                <span  style={{backgroundColor: backgroundColor}} className={`bottomLine ${open ? "bottomLineAnim" : ""}`}></span>
             </div>
-            {open && <ResNavBar />}
+            {
+                open?<ResNavBar />:null
+            }
 
         </div>
         

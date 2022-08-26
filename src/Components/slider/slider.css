@@ -85,7 +85,7 @@
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center left;
 }
 
 .slide::before {
@@ -95,14 +95,14 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .slide-1 {
-    background-image: url("../../images/slider/slider3.jpg");
+  background-image: url("../../images/slider/slider98.jpg");
 }
 .slide-2 {
-    background-image: url("../../images/slider/slider-02.jpg");
+  background-image: url("../../images/slider/slider3.jpg");
 }
 .wrapper{
     position: relative;
@@ -118,16 +118,29 @@
 }
 .myintro{
     padding: 2rem;
+    text-align: center;
 } 
  .myintro h1 {
      font-size: 7rem;
-} 
- .myintro p{
-     font-size: 5.5rem;
-     text-align: center;
-} 
+     font-family: var(--primary-font);
+     /* border-bottom: 4px solid var(--secondary_color); */
+    } 
+.myintro p{
+      font-size: 5rem;
+      font-family:var(--secondary-font);
+      font-weight:600;
+      text-align: center;
+    } 
 .introbtn{
-    font-size: 4rem;
+      font-size: 4rem;
+      background-color: var(--primary_color) !important;
+      color: white;
+      font-style: italic;
+      font-weight: bold;
+  }
+  .introbtn:hover{
+    background-color: var(--secondary_color) !important;
+    color: black !important;
 }
 .my-pic-box{
     /* position: absolute;
